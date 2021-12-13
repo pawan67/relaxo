@@ -4,9 +4,10 @@ function Header() {
   return (
     <>
       <div className="pt-6 flex text-[#142D4C] justify-between items-center w-screen  font-poppins font-semibold  container lg mx-auto">
+        <a href="https://relaxo.vercel.app/">
         <div className=" ml-10  font-bold   hover:shadow-2xl hover:cursor-pointer transition-all px-9 p-4 shadow-md rounded-2xl mt-5 inline-block bg-[#9FD3C7] text-xl ">
           Relaxo
-        </div>
+        </div></a>
         <p className=" w-[550px] sm:hidden hidden lg:block   text-2xl  font-semibold text-center">
           Create your own mix of nature sounds & double your productivity
         </p>
