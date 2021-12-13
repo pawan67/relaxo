@@ -38,11 +38,11 @@ function Boxes({ name, image, audioPlay }) {
             alt={name}
           />
         </div>
-        <Box sx={{ width: 170 }}>
+        <Box  sx={{ width: 170 }}>
           <Stack spacing={2} direction="row" sx={{ mb: 1 }} alignItems="center">
-            <VolumeDown />
-            <Slider min={0} max={1} step={0.05} color="secondary" aria-label="Volume" value={value} onChange={handleChange} />
-            <VolumeUp />
+            <VolumeDown className=" dark:text-[#559b8b]" />
+            <Slider  min={0} max={1} step={0.05} color="secondary" aria-label="Volume" value={value} onChange={handleChange} />
+            <VolumeUp className=" dark:text-[#559b8b]"  />
           </Stack>
         </Box>
         

@@ -1,10 +1,17 @@
+import React, { useRef, useState } from "react";
+
 import "./App.css";
 import Boxes from "./Boxes";
 import Footer from "./Footer";
 import Header from "./Header";
+//BsFillLightbulbFill
+import { BsHeartFill, BsFillLightbulbFill } from "react-icons/bs";
+
 function App() {
+ 
+
   return (
-    <div className="box-border overflow-x-hidden bg-[#E5E5E5] ">
+    <div className="box-border overflow-x-hidden dark:bg-[#041C32]  bg-[#E5E5E5] ">
       <Header />
 
       <div className=" container mx-auto flex flex-wrap items-center justify-center mt-15 md:mt-28">
@@ -108,6 +115,13 @@ function App() {
         />
       </div>
       <Footer />
+
+      {/* <div
+        onClick={() => setDarkMode(true)}
+        className=" bg-white fixed bottom-8 shadow-xl right-10 px-4 py-4 rounded-2xl   "
+      >
+        {<BsFillLightbulbFill />}
+      </div> */}
     </div>
   );
 }
