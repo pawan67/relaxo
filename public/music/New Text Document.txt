@@ -1,0 +1,14 @@
+library
+https://e8b8e3q2.ssl.hwcdn.net/sounds/people/delft-library160.mp3
+
+road
+https://e8b8e3q2.ssl.hwcdn.net/sounds/hipster/highway160.mp3
+
+fan
+https://e8b8e3q2.ssl.hwcdn.net/sounds/objects/fan-two160.mp3
+
+windchim{% elif %}
+https://e8b8e3q2.ssl.hwcdn.net/sounds/windchime160.mp3
+
+train
+https://e8b8e3q2.ssl.hwcdn.net/sounds/hipster/train160.mp3
