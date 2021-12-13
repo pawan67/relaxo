@@ -76,6 +76,36 @@ function App() {
           image="images/work.png"
           audioPlay="music/office.mp3"
         />
+        <Boxes
+          name="Stadium"
+          image="images/sports.png"
+          audioPlay="music/stadium.mp3"
+        />
+        <Boxes
+          name="Fan"
+          image="images/extractor.png"
+          audioPlay="https://e8b8e3q2.ssl.hwcdn.net/sounds/objects/fan-two160.mp3"
+        />
+        <Boxes
+          name="Library"
+          image="images/book.png"
+          audioPlay="https://e8b8e3q2.ssl.hwcdn.net/sounds/people/delft-library160.mp3"
+        />
+        <Boxes
+          name="Road"
+          image="images/road.png"
+          audioPlay="https://e8b8e3q2.ssl.hwcdn.net/sounds/hipster/highway160.mp3"
+        />
+        <Boxes
+          name="Windchime"
+          image="images/sound.png"
+          audioPlay="https://e8b8e3q2.ssl.hwcdn.net/sounds/windchime160.mp3"
+        />
+        <Boxes
+          name="Train"
+          image="images/underground.png"
+          audioPlay="https://e8b8e3q2.ssl.hwcdn.net/sounds/hipster/train160.mp3"
+        />
       </div>
       <Footer />
     </div>
