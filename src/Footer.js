@@ -34,7 +34,7 @@ function Footer() {
         </p>
         <a href="https://www.buymeacoffee.com/pawan.67">
           <img
-            className=" rounded-2xl inline ml-5 mt-5 mx-auto w-36 h-full"
+            className=" rounded-2xl inline ml-5 mt-5 sm:mt-0 mx-auto w-36 h-full"
             src="images/buymecofee.svg"
             alt=""
           />
