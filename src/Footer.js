@@ -7,7 +7,7 @@ import {
 } from "react-icons/ai";
 function Footer() {
   return (
-    <div className=" bg-[#0b1725]   w-screen  mt-32">
+    <div className=" bg-[#000000]   w-screen  mt-32">
       <div className="container font-poppins text-xl   text-center mx-auto p-10 text-[#F0F5F9]">
         <p className=" font-poppins text-lg  inline">
           Made with &nbsp;

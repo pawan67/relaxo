@@ -5,25 +5,52 @@ import Boxes from "./Boxes";
 import Footer from "./Footer";
 import Header from "./Header";
 //BsFillLightbulbFill
-import { BsHeartFill, BsFillLightbulbFill } from "react-icons/bs";
+import {  BsFillLightbulbFill } from "react-icons/bs";
+import { MdDarkMode } from "react-icons/md";
 
 function App() {
- 
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  function setDarkMode() {
+    var root = document.getElementsByTagName("html")[0];
+    root.classList.toggle("dark");
+    if (root.classList.contains("dark")) {
+      setIsDarkMode(true);
+    } else {
+      setIsDarkMode(false);
+    }
+  }
+  let toggleBtn = "";
+  if(isDarkMode) {
+    toggleBtn = <BsFillLightbulbFill />;
+  }
+  else{
+    toggleBtn = <MdDarkMode/>;
+  }
 
   return (
-    <div className="box-border overflow-x-hidden dark:bg-[#041C32]  bg-[#E5E5E5] ">
+    <div className="box-border overflow-x-hidden dark:bg-[#1b1b1b] transition-all  bg-[#E5E5E5] ">
       <Header />
 
       <div className=" container mx-auto flex flex-wrap items-center justify-center mt-15 md:mt-28">
+        <Boxes
+          name="Lightning"
+          image="images/flash.png"
+          audioPlay="music/lightning.mp3"
+        />
+        <Boxes
+          name="Train"
+          image="images/underground.png"
+          audioPlay="https://e8b8e3q2.ssl.hwcdn.net/sounds/hipster/train160.mp3"
+        />
         <Boxes
           name="Birds"
           image="images/birds.png"
           audioPlay="music/birds.mp3"
         />
         <Boxes
-          name="Cafe"
-          image="images/coffee-shop.png"
-          audioPlay="music/cafe.mp3"
+          name="Wave"
+          image="images/wave.png"
+          audioPlay="music/ocean.mp3"
         />
         <Boxes
           name="Campfire"
@@ -46,11 +73,7 @@ function App() {
           audioPlay="music/keyboard.mp3"
         />
         <Boxes name="Farm" image="images/farm.png" audioPlay="music/farm.mp3" />
-        <Boxes
-          name="Lightning"
-          image="images/flash.png"
-          audioPlay="music/lightning.mp3"
-        />
+
         <Boxes
           name="Steps"
           image="images/footsteps-silhouette-variant.png"
@@ -72,11 +95,7 @@ function App() {
           image="images/snowfall.png"
           audioPlay="music/snow.mp3"
         />
-        <Boxes
-          name="Wave"
-          image="images/wave.png"
-          audioPlay="music/ocean.mp3"
-        />
+
         <Boxes name="Wind" image="images/wind.png" audioPlay="music/wind.mp3" />
         <Boxes
           name="Office"
@@ -109,19 +128,20 @@ function App() {
           audioPlay="https://e8b8e3q2.ssl.hwcdn.net/sounds/windchime160.mp3"
         />
         <Boxes
-          name="Train"
-          image="images/underground.png"
-          audioPlay="https://e8b8e3q2.ssl.hwcdn.net/sounds/hipster/train160.mp3"
+          name="Cafe"
+          image="images/coffee-shop.png"
+          audioPlay="music/cafe.mp3"
         />
       </div>
       <Footer />
-
-      {/* <div
-        onClick={() => setDarkMode(true)}
-        className=" bg-white fixed bottom-8 shadow-xl right-10 px-4 py-4 rounded-2xl   "
+    
+      <div
+        onClick={setDarkMode}
+        className={` bg-[#fff]  fixed bottom-6 sm:right-10 sm:bottom-10 shadow-xl right-6 px-4 py-4 rounded-2xl transition-all   `}
       >
-        {<BsFillLightbulbFill />}
-      </div> */}
+     
+        {toggleBtn}
+      </div>
     </div>
   );
 }
